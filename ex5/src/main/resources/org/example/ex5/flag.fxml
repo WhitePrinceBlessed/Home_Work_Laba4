@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ex5.FlagController">
+    <VBox alignment="CENTER" spacing="10" prefWidth="300" prefHeight="250">
+        <Label text="Выберите цвета полос:"/>
+
+        <HBox spacing="10">
+            <VBox>
+                <Label text="Первая полоса"/>
+                <RadioButton text="Красный" fx:id="radio1_1"/>
+                <RadioButton text="Синий" fx:id="radio1_2"/>
+                <RadioButton text="Жёлтый" fx:id="radio1_3"/>
+            </VBox>
+
+            <VBox>
+                <Label text="Вторая полоса"/>
+                <RadioButton text="Зелёный" fx:id="radio2_1"/>
+                <RadioButton text="Белый" fx:id="radio2_2"/>
+                <RadioButton text="Чёрный" fx:id="radio2_3"/>
+            </VBox>
+
+            <VBox>
+                <Label text="Третья полоса"/>
+                <RadioButton text="Оранжевый" fx:id="radio3_1"/>
+                <RadioButton text="Фиолетовый" fx:id="radio3_2"/>
+                <RadioButton text="Розовый" fx:id="radio3_3"/>
+            </VBox>
+        </HBox>
+
+        <Button text="Нарисовать" onAction="#drawFlag"/>
+        <Label fx:id="resultLabel" text=""/>
+    </VBox>
+</AnchorPane>
